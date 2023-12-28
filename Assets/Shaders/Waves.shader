@@ -90,7 +90,7 @@ Shader "Custom/Waves"
             float h = 0.0;
             float wavelength = (_Wavelength * 100) * (random(d.x, d.y) - 0.5);
 
-            for(int i=0; i < 32; i++) {
+            for(int i=0; i < 16; i++) {
                 float xz = d.x * (p.x + prevPartial.x) + d.y * (p.z + prevPartial.y);
                 float omega = 0.8 * UNITY_PI / wavelength;
 
